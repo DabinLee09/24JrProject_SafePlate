@@ -11,9 +11,9 @@ export default function App() {
     // <RootNavigation/>
     // <Login/>
     // <RestaurantDetail/>
-    // <Navigation />
+    <Navigation />
 
-    <styles />
+    // <styles />
 
   );
 }

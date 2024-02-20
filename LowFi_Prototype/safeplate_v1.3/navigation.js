@@ -22,35 +22,36 @@ import SearchTabDefalt from './components/search/SearchTabDefault';
 import SearchTabType from './components/search/SearchTabType';
 import SearchTabDefault from './components/search/SearchTabDefault';
 import RestaurantListings from './screens/RestaurantListings';
+import InfoTab from './components/restaurantDetail/InfoTab';
 
-//InfoTab
-const InfoTab = createMaterialTopTabNavigator();
+// //InfoTab
+// const InfoTab = createMaterialTopTabNavigator();
 
-function InfoTabGroup(){
-  return(
-    <InfoTab.Navigator
-        screenOptions={{
-            tabBarLabelStyle: {fontSize: 12},
-            tabBarItemStyle: {},
-            tabBarStyle:{
-                backgroundColor: "pink", 
-                marginTop: 100,
-            },
-            tabBarActiveTintColor: "#333",
-            tabBarIndicatorStyle: {backgroundColor: "red"} 
+// function InfoTabGroup(){
+//   return(
+//     <InfoTab.Navigator
+//         screenOptions={{
+//             tabBarLabelStyle: {fontSize: 12},
+//             tabBarItemStyle: {},
+//             tabBarStyle:{
+//                 backgroundColor: "pink", 
+//                 marginTop: 100,
+//             },
+//             tabBarActiveTintColor: "#333",
+//             tabBarIndicatorStyle: {backgroundColor: "red"} 
 
-        }}
-        >
-            <InfoTab.Screen name="TabMenuItem" component={TabMenuItem} 
-            // options={{
-            //   headerTitle: () => <re />,
-            // }}
-            />
-            <InfoTab.Screen name="TabInfo" component={TabInfo} />
-            <InfoTab.Screen name="TabReviews" component={TabReviews} />
-        </InfoTab.Navigator>
-  )
-}
+//         }}
+//         >
+//             <InfoTab.Screen name="TabMenuItem" component={TabMenuItem} 
+//             // options={{
+//             //   headerTitle: () => <re />,
+//             // }}
+//             />
+//             <InfoTab.Screen name="TabInfo" component={TabInfo} />
+//             <InfoTab.Screen name="TabReviews" component={TabReviews} />
+//         </InfoTab.Navigator>
+//   )
+// }
 
 
 //SearchTab
@@ -58,9 +59,20 @@ const SearchTab = createMaterialTopTabNavigator();
 
 function SearchTabGroup(){
   return(
-    <SearchTab.Navigator>
-      <SearchTab.Screen name="SearchTabDefault" component={SearchTabDefault} />
-      <SearchTab.Screen name="SearchTabType" component={SearchTabType} />
+    <SearchTab.Navigator screenOptions={{
+      tabBarLabelStyle: {fontSize: 16, textTransform: "none"},
+      tabBarActiveTintColor: "#53A385",
+      tabBarInactiveTintColor: "#7E7E7E",
+      tabBarIndicatorStyle: { 
+        height: 3, 
+        borderRadius: 4, 
+        marginHorizontal: 60,
+        width: 80, 
+        backgroundColor: "#53A385",
+      } ,
+    }}>
+      <SearchTab.Screen name="Default Search" component={SearchTabDefault} />
+      <SearchTab.Screen name="Type Search" component={SearchTabType} />
     </SearchTab.Navigator>
   )
 }
@@ -75,11 +87,11 @@ function HomeStackGroup({ navigation }) {
     // <HomeStack.Navigator initialRouteName='Home' screenOptions={{ headerShown: false}}>
     <HomeStack.Navigator>
       <HomeStack.Screen name='Home' component={Home} />
-      <HomeStack.Screen name='SearchTabGroup' component={SearchTabGroup} options={{presentation: 'transparentModal'}}/>
+      <HomeStack.Screen name='SearchTabGroup' component={SearchTabGroup} options={{presentation: 'Modal'}}/>
       <HomeStack.Screen name='RestaurantDetail' component={RestaurantDetail} />
       <HomeStack.Screen name='SearchBar' component={RestaurantDetail} />
       <HomeStack.Screen name='CuratedGuideScreen' component={CuratedGuideScreen} />
-      <HomeStack.Screen name='FilteredMenu' component={InfoTabGroup} options={{presentation: "modal"}}/>
+      {/* <HomeStack.Screen name='FilteredMenu' component={InfoTabGroup} options={{presentation: "modal"}}/> */}
       <HomeStack.Screen name='UnFilteredMenu' component={UnFilteredMenu} />
       <HomeStack.Screen name='RestaurantListings' component={RestaurantListings} />
     </HomeStack.Navigator>
@@ -140,10 +152,25 @@ function TabGroup() {
 
 
 
+
+// const Stack = createStackNavigator();
+
+// function RootNavigator() {
+//   return (
+//     <Stack.Navigator>
+//       <Stack.Screen name="TabGroup" component={TabGroup} />
+//       <Stack.Screen name="InfoTab" component={InfoTab} />
+//     </Stack.Navigator>
+//   );
+// }
+
+
+
 export default function Navigation() {
   return (
     <NavigationContainer>
         <TabGroup />
+        {/* <RootNavigator/> */}
     </NavigationContainer>
   )
 }

@@ -8,9 +8,6 @@ import TabReviews from './TabReviews';
 
 
 
-
-
-
 const InfoTap = createMaterialTopTabNavigator();
 
 
@@ -21,20 +18,30 @@ export default function InfoTab() {
             tabBarLabelStyle: {fontSize: 12},
             tabBarItemStyle: {},
             tabBarStyle:{
-                backgroundColor: "pink", 
-                marginTop: 100,
+                backgroundColor: "#f3f3f3", 
+                // marginTop: 100,
             },
             tabBarActiveTintColor: "#333",
-            tabBarIndicatorStyle: {backgroundColor: "red"} 
+            tabBarIndicatorStyle: {
+                backgroundColor: "#53A385",
+                height: 4, 
+                bottom: 1, 
+                borderRadius: 4,
+                width: 100,
+                position: "absolute",
+                alignItems: "center"
+                    
+
+            } 
 
             // tabBarContentContainerStyle: {justifyContent: "space-between", }, 
             // tabBarIndicatorContainerStyle: {justifyContent: "space-between", }, 
 
         }}
         >
-            <InfoTap.Screen name="TabMenuItem" component={TabMenuItem} />
-            <InfoTap.Screen name="TabInfo" component={TabInfo} />
-            <InfoTap.Screen name="TabReviews" component={TabReviews} />
+            <InfoTap.Screen name="Menu Items" component={TabMenuItem} />
+            <InfoTap.Screen name="Info" component={TabInfo} />
+            <InfoTap.Screen name="Reviews" component={TabReviews} />
         </InfoTap.Navigator>
   )
 }

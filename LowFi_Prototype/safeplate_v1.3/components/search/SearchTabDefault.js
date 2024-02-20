@@ -1,9 +1,11 @@
-import { View, Text, StyleSheet, TouchableOpacity, Animated, Touchable } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity, Animated, } from 'react-native'
 import React, { useState } from 'react'
 import { BlurView } from 'expo-blur';
 import { FadeIn, FadeOut, SlideInDown } from 'react-native-reanimated';
 import { useRoute } from '@react-navigation/native';
 import PopularInPlace from '../home/PopularInPlace';
+import WhoCheckBox from './WhoCheckBox';
+import RestrictionCheckBox from './RestrictionCheckBox';
 
 
 const AnimatedTouchableOpacity = Animated.createAnimatedComponent(TouchableOpacity)
@@ -34,13 +36,13 @@ export default function SearchTabDefault({navigation, cityHandler}) {
         )}
 
         {openCard === 0 && (
-          <>
+          <View style={styles.cardFocus}>
           <Text style={styles.cardHeader}>Who</Text>
           <Text style={styles.cardSub}>Select your dining buddies from the friend list</Text>
           <Animated.View style={styles.cardBody}>
-          
+          <WhoCheckBox/>
           </Animated.View>
-          </>
+          </View>
         )}
       </View>
 
@@ -61,13 +63,19 @@ export default function SearchTabDefault({navigation, cityHandler}) {
            )}
 
         {openCard === 1 && (
-          <>
+          <View style={styles.cardFocus}>
           <Text style={styles.cardHeader}>What</Text>
           <Text style={styles.cardSub}>Select your allergies</Text>
+          <RestrictionCheckBox />
+
+          <Text style={styles.cardSub}>Select your allergies</Text>
+          <RestrictionCheckBox />
           <Animated.View>
             {/* <SearchBar  cityHandler={setCity}/> */}
+            <RestrictionCheckBox />
+            
           </Animated.View>
-          </>
+          </View>
         )}
       </View>
 
@@ -87,13 +95,13 @@ export default function SearchTabDefault({navigation, cityHandler}) {
           </AnimatedTouchableOpacity>
         )}
          {openCard === 2 && (
-          <>
+          <View style={styles.cardFocus}>
           <Text style={styles.cardHeader}>Where</Text>
           <Text style={styles.cardSub}>Enter the area where you'd like to discover dining options</Text>
           <Animated.View>
           
           </Animated.View>
-          </>
+          </View>
         )}
       </View>
 
@@ -139,6 +147,7 @@ const styles = StyleSheet.create({
   container: {
       flex: 1,
       paddingTop: 10,
+      backgroundColor: "#FFFFFF"
   },
   footer: {
     flex: 1,
@@ -169,15 +178,24 @@ const styles = StyleSheet.create({
     // borderColor: "#53A385",
     // borderWidth: 1,
     margin: 10,
+    gap: 8,
+  },
+  cardFocus: {
+    backgroundColor: "white",
+    borderRadius: 4,
+    padding: 20,
+    // borderColor: "#53A385",
+    // borderWidth: 1,
+    margin: 10,
+    gap: 16,
     elevation: 4,
     shadowColor: '#000',
-    shadowOpacity: 0.3,
+    shadowOpacity: 0.15,
     shadowRadius: 4,
     shadowOffset: {
       width: 2,
       height: 2,
     },
-    gap: 20,
   },
   previewText: {
     fontSize: 14,
@@ -190,6 +208,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold', 
   },
   cardPreview:{
+    backgroundColor: "white",
+    // borderColor: "#53A385",
+    // borderWidth: 1,
+    margin: 10,
+    gap: 8,
     flexDirection: 'row',
     justifyContent: 'space-between',
     padding: 20,
@@ -200,19 +223,21 @@ const styles = StyleSheet.create({
   },
   cardHeader: {
     fontSize: 24,
-    padding: 20,
+    // paddingLeft: 20,
+    // paddingTop: 20,
     fontWeight: 'bold'
   },
   cardSub: {
     fontSize: 14,
     color: "#333",
     fontWeight: '400', 
-    paddingLeft: 20,
-    paddingBottom: 20,
+    // paddingLeft: 20,
+    // paddingBottom: 20,
   },
   cardBody: {
-    paddingHorizontal: 20,
-    paddingBottom: 20,
+    // paddingHorizontal: 20,
+    // paddingBottom: 20,
+  
   }
 
 
