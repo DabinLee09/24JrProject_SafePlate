@@ -62,6 +62,8 @@ export default function RestrictionCheckBox() {
 }
 
 
+
+
 const styles = StyleSheet.create({
     iconContainer:{
         flexDirection: "row",

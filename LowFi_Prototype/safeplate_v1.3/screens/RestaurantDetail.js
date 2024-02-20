@@ -16,12 +16,14 @@ export default function RestaurantDetail({ route }) {
   return (
     <ScrollView style={{ backgroundColor: 'white' }}>
       <About route={route} />
+      
       <InfoIcon />
+      <InfoTab />
       {/* <MenuTab activeTab={activeTab} setActiveTab={setActiveTab}/> */}
       {/* <MenuTap2/> */}
       {/* <InfoTab /> */}
       <MenuItems />
-      <InfoTab2 />
+      
       {/* <NavigationContainer>
         <InfoTab /> 
       </NavigationContainer> */}

@@ -2,6 +2,7 @@ import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
 import React, { useState } from 'react'
 import * as Svg from 'react-native-svg';
 
+
 const items = [
     {
         image: require("../../assets/images/avt.png"),
@@ -74,7 +75,7 @@ export default function WhoCheckBox() {
             )} 
 
 
-            <Text>{item.name}</Text>
+            <Text >{item.name}</Text>
         </View>
     ))}
     </View>
