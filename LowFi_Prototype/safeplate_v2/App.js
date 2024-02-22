@@ -5,9 +5,9 @@ import StyleTest from "./screens/StyleTest";
 
 export default function App() {
   return (
-    <Navigation />
+    // <Navigation />
 
-    //Gianna's WorkSpace
-    // <StyleTest />
+    // Gianna's WorkSpace
+    <StyleTest />
   );
 }

@@ -9,6 +9,8 @@ export default function StyleTest() {
     <SafeAreaView style={{margin: 16, gap: 8,}}>
       <Text style={GlobalStyles.titleText}>GlobalStyles.titleText</Text>
       <Text style={GlobalStyles.subTextText}>GlobalStyles.subText</Text>
+      <Text style={GlobalStyles.subTextText}>GlobalStyles.subText</Text>
+
     </SafeAreaView>
     </ScrollView>
   )
