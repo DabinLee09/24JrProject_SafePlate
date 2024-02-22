@@ -6,6 +6,7 @@ import { useRoute } from '@react-navigation/native';
 import PopularInPlace from '../home/PopularInPlace';
 import WhoCheckBox from './WhoCheckBox';
 import RestrictionCheckBox from './RestrictionCheckBox';
+import { ScrollView } from 'react-native';
 
 
 const AnimatedTouchableOpacity = Animated.createAnimatedComponent(TouchableOpacity)
@@ -19,7 +20,13 @@ export default function SearchTabDefault({navigation, cityHandler}) {
   }
   return (
     <BlurView intensity={70} style={styles.container} tint='light'>
-
+      <ScrollView 
+      style={{
+        position: "relative", 
+        flex: 1,
+        paddingBottom: 100, 
+        backgroundColor: "red"
+        }}>
       {/* who */}
       {/* who */}
       <View style={styles.card}>
@@ -105,7 +112,7 @@ export default function SearchTabDefault({navigation, cityHandler}) {
         )}
       </View>
 
-
+      </ScrollView>
 
 
 

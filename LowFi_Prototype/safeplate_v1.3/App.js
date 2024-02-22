@@ -5,6 +5,7 @@ import RootNavigation from "./navigation";
 import Login from "./screens/Login"
 import Navigation from "./navigation";
 import StyleTest from "./screens/StyleTest";
+import SearchTabGroup from "./navigation";
 
 
 
@@ -15,7 +16,10 @@ export default function App() {
     // <RestaurantDetail/>
     // <Navigation />
 
-    <StyleTest />
+    <SearchTabGroup />
+
+    //Gianna's workspace
+    // <StyleTest />
 
   );
 }

@@ -11,34 +11,31 @@ const items = [
         image: require("../../assets/images/egg_solid.png"),
         name: "Egg",
     },
-    // {
-    //     image: require("../../assets/images/icon.png"),
-    //     name: "Peanut",
-    // },
-    // {
-    //     image: require("../../assets/images/dairy_solid.png"),
-    //     name: "Dairy",
-    // },
-    // {
-    //     image: require("../../assets/images/egg_solid.png"),
-    //     name: "Egg",
-    // },
-    // {
-    //     image: require("../../assets/images/icon.png"),
-    //     name: "Peanut",
-    // },
-    // {
-    //     image: require("../../assets/images/dairy_solid.png"),
-    //     name: "Dairy",
-    // },
-    // {
-    //     image: require("../../assets/images/egg_solid.png"),
-    //     name: "Egg",
-    // },
-    // {
-    //     image: require("../../assets/images/icon.png"),
-    //     name: "Peanut",
-    // },
+    {
+        image: require("../../assets/images/icon.png"),
+        name: "Peanut",
+    },
+    {
+        image: require("../../assets/images/egg_solid.png"),
+        name: "Egg",
+    },
+    {
+        image: require("../../assets/images/icon.png"),
+        name: "Peanut",
+    },
+    {
+        image: require("../../assets/images/dairy_solid.png"),
+        name: "Dairy",
+    },
+    {
+        image: require("../../assets/images/dairy_solid.png"),
+        name: "Dairy",
+    },
+    {
+        image: require("../../assets/images/egg_solid.png"),
+        name: "Egg",
+    },
+
  ]; 
 
 export default function RestrictionCheckBox() {
@@ -71,7 +68,7 @@ const styles = StyleSheet.create({
         gap: 16,
         // justifyContent: "space-between",
         // alignItems: "center",
-        // backgroundColor: "blue"
+        // backgroundColor: "lightblue"
     },
     iconWrap: {
         flexDirection: "row",
@@ -85,7 +82,7 @@ const styles = StyleSheet.create({
         borderColor: "#53A385",
         padding: 8,
         // backgroundColor: "pink",
-        width: 100,
+        // width: 100,
         alignItems: "center",
 
     },
