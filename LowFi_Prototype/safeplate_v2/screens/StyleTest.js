@@ -9,12 +9,7 @@ export default function StyleTest() {
     <SafeAreaView style={{margin: 16, gap: 8,}}>
       <Text style={GlobalStyles.titleText}>GlobalStyles.titleText</Text>
       <Text style={GlobalStyles.subTextText}>GlobalStyles.subText</Text>
-      <Text style={GlobalStyles.subTextText}>GlobalStyles.subText</Text>
-      <Text style={GlobalStyles.subTextText}>GlobalStyles.subText</Text>
-      <Text style={GlobalStyles.titleText}>GlobalStyles.titleText</Text>
-      <Text style={GlobalStyles.subTextText}>GlobalStyles.subText</Text>
-      <Text style={GlobalStyles.subTextText}>GlobalStyles.subText</Text>
-      <Text style={GlobalStyles.subTextText}>February 23 4:38</Text>
+      <Text style={GlobalStyles.subTextText}>February 23 4:44</Text>
     </SafeAreaView>
     </ScrollView>
   )
