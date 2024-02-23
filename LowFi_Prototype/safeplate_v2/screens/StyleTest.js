@@ -11,6 +11,10 @@ export default function StyleTest() {
       <Text style={GlobalStyles.subTextText}>GlobalStyles.subText</Text>
       <Text style={GlobalStyles.subTextText}>GlobalStyles.subText</Text>
       <Text style={GlobalStyles.subTextText}>GlobalStyles.subText</Text>
+      <Text style={GlobalStyles.titleText}>GlobalStyles.titleText</Text>
+      <Text style={GlobalStyles.subTextText}>GlobalStyles.subText</Text>
+      <Text style={GlobalStyles.subTextText}>GlobalStyles.subText</Text>
+      <Text style={GlobalStyles.subTextText}>February 23 4:38</Text>
     </SafeAreaView>
     </ScrollView>
   )
