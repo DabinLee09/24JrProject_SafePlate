@@ -6,13 +6,13 @@ import { ScrollView } from 'react-native'
 export default function StyleTest() {
   return (
     <ScrollView>
-    <SafeAreaView style={{margin: 16, gap: 8,}}>
-      <View style={GlobalStyles.grid}>
-        <Text style={[GlobalStyles.titleText, GlobalStyles.spacing3x]}>GlobalStyles.titleText</Text>
-        <Text style={GlobalStyles.subTextText}>GlobalStyles.subText</Text>
-        <Text style={GlobalStyles.subTextText}>February 23 4:44</Text>
+      <SafeAreaView>
+        <View style={[GlobalStyles.grid]}>
+          <Text style={[GlobalStyles.headingXLbold, GlobalStyles.spacing3x]}>This is an XL heading</Text>
+          <Text style={GlobalStyles.bodyLreg}>Hello world!</Text>
+          <Text style={GlobalStyles.bodyXSital}>I am styling things</Text>
         </View>
-    </SafeAreaView>
+      </SafeAreaView>
     </ScrollView>
-  )
-}
+  );
+  }
