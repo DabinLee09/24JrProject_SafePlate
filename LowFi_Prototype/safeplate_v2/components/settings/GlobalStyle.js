@@ -45,6 +45,14 @@ const GlobalStyles = StyleSheet.create({
     spacing12x: {
       marginBottom: 96,
     },
+
+    // grid defining left/right and top/bottom margins
+    grid: {
+      flex: 1,
+      paddingHorizontal: 16,
+      paddingVertical: 24,
+    },
+
     // Add more styles as needed
   });
   
