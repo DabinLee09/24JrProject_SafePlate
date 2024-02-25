@@ -34,7 +34,7 @@ const GlobalStyles = StyleSheet.create({
     marginBottom: 96,
   },
 
-// grid defining left/right and top/bottom margins
+  // grid defining left/right and top/bottom margins
   grid: {
     flex: 1,
     paddingHorizontal: 16,
@@ -57,7 +57,7 @@ const GlobalStyles = StyleSheet.create({
     lineHeight: 40,
   },
 
-// body text
+  // body text
   bodyLbold: {
     fontFamily: 'SF-Pro-Text-Bold',
     fontSize: 20,
@@ -123,6 +123,129 @@ const GlobalStyles = StyleSheet.create({
     fontSize: 12,
     lineHeight: 22,
   },
+
+  // pill styles
+  // apply ctaSreg for S,M,L pills; apply bodyLreg for XL pills; add icons for S, M, XL pills
+  pillSprimary: {
+    display: 'flex',
+    paddingVertical: 3,
+    paddingHorizontal: 10,
+    alignItems: 'center',
+    flexDirection: 'row',
+    borderRadius: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 4,
+
+    backgroundColor: '#53A385',
+  },
+
+  pillSsecondary: {
+    display: 'flex',
+    paddingVertical: 3,
+    paddingHorizontal: 10,
+    alignItems: 'center',
+    flexDirection: 'row',
+    borderRadius: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 4,
+    
+    backgroundColor: '#white',
+    borderWidth: 1,
+    borderColor: '#53A385',
+  },
+
+  pillMprimary: {
+    display: 'flex',
+    paddingVertical: 5,
+    paddingHorizontal: 10,
+    alignItems: 'center',
+    flexDirection: 'row',
+    borderRadius: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 4,
+
+    backgroundColor: '#53A385',
+  },
+
+  pillMsecondary: {
+    display: 'flex',
+    paddingVertical: 5,
+    paddingHorizontal: 10,
+    alignItems: 'center',
+    flexDirection: 'row',
+    borderRadius: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 4,
+    
+    backgroundColor: '#white',
+    borderWidth: 1,
+    borderColor: '#53A385',
+  },
+
+  pillLprimary: {
+    display: 'flex',
+    paddingVertical: 9,
+    paddingHorizontal: 16,
+    alignItems: 'center',
+    flexDirection: 'row',
+    borderRadius: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 4,
+
+    backgroundColor: '#39735D',
+  },
+
+  pillLsecondary: {
+    display: 'flex',
+    paddingVertical: 9,
+    paddingHorizontal: 16,
+    alignItems: 'center',
+    flexDirection: 'row',
+    borderRadius: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 4,
+    
+    backgroundColor: '#white',
+    borderWidth: 1,
+    borderColor: '#39735D',
+  },
+
+  pillXLprimary: {
+    display: 'flex',
+    paddingVertical: 9,
+    paddingHorizontal: 16,
+    alignItems: 'center',
+    flexDirection: 'row',
+    borderRadius: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 4,
+
+    backgroundColor: '#53A385',
+  },
+
+  pillXLsecondary: {
+    display: 'flex',
+    paddingVertical: 9,
+    paddingHorizontal: 16,
+    alignItems: 'center',
+    flexDirection: 'row',
+    borderRadius: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 4,
+    
+    backgroundColor: 'white',
+    borderWidth: 1,
+    borderColor: '#53A385',
+  },
+
 });
 
 export default GlobalStyles;
