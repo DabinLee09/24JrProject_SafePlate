@@ -13,8 +13,8 @@ export default function StyleTest() {
           <Text style={GlobalStyles.bodyXSital}>I am styling things</Text>
           
         <View style={{ alignItems: 'left' }}>
-          <Pressable style={GlobalStyles.pillLprimary}>
-            <Text style={[GlobalStyles.ctaSreg, { color: 'white' }]}>Primary Pill</Text>
+          <Pressable style={GlobalStyles.btnLsecondary}>
+            <Text style={[GlobalStyles.ctaSreg, { color: '#39735D' }]}>Sample Btn</Text>
           </Pressable>
         </View>
 

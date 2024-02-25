@@ -246,6 +246,127 @@ const GlobalStyles = StyleSheet.create({
     borderColor: '#53A385',
   },
 
+  // button styles
+  // apply ctaSbold for S, M, L btns
+  btnSprimary: {
+    display: 'flex',
+    paddingVertical: 6,
+    paddingHorizontal: 16,
+    alignItems: 'center',
+    flexDirection: 'row',
+    borderRadius: 4,
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 4,
+
+    backgroundColor: '#39735D',
+  },
+
+  btnSsecondary: {
+    display: 'flex',
+    paddingVertical: 6,
+    paddingHorizontal: 16,
+    alignItems: 'center',
+    flexDirection: 'row',
+    borderRadius: 4,
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 4,
+    
+    backgroundColor: 'white',
+    borderWidth: 1,
+    borderColor: '#39735D',
+  },
+
+  btnMprimaryRound: {
+    display: 'flex',
+    paddingVertical: 8,
+    paddingHorizontal: 24,
+    alignItems: 'center',
+    flexDirection: 'row',
+    borderRadius: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 4,
+
+    backgroundColor: '#39735D',
+  },
+
+  btnMsecondaryRound: {
+    display: 'flex',
+    paddingVertical: 8,
+    paddingHorizontal: 24,
+    alignItems: 'center',
+    flexDirection: 'row',
+    borderRadius: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 4,
+    
+    backgroundColor: 'white',
+    borderWidth: 1,
+    borderColor: '#39735D',
+  },
+
+  btnMprimary: {
+    display: 'flex',
+    paddingVertical: 8,
+    paddingHorizontal: 24,
+    alignItems: 'center',
+    flexDirection: 'row',
+    borderRadius: 4,
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 4,
+
+    backgroundColor: '#39735D',
+  },
+
+  btnMsecondary: {
+    display: 'flex',
+    paddingVertical: 8,
+    paddingHorizontal: 24,
+    alignItems: 'center',
+    flexDirection: 'row',
+    borderRadius: 4,
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 4,
+    
+    backgroundColor: 'white',
+    borderWidth: 1,
+    borderColor: '#39735D',
+  },
+
+  btnLprimary: {
+    display: 'flex',
+    paddingVertical: 10,
+    paddingHorizontal: 24,
+    alignItems: 'center',
+    flexDirection: 'row',
+    borderRadius: 4,
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 4,
+
+    backgroundColor: '#39735D',
+  },
+
+  btnLsecondary: {
+    display: 'flex',
+    paddingVertical: 10,
+    paddingHorizontal: 24,
+    alignItems: 'center',
+    flexDirection: 'row',
+    borderRadius: 4,
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 4,
+    
+    backgroundColor: 'white',
+    borderWidth: 1,
+    borderColor: '#39735D',
+  },
 });
 
 export default GlobalStyles;
