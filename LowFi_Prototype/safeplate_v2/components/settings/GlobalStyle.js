@@ -42,84 +42,65 @@ const GlobalStyles = StyleSheet.create({
   },
 
   // text styling
-  //naming convention: type(heading,body,or cta); size(XL,L,M,S,or XS); weight(bold,medium,regular,or light italic)
+  //naming convention: type(heading,body,or caption); hierarchy(1-5); size(XS,S,M,L,orXL)
   
-  // headings
-  headingXLbold: {
+  // headings (5 total)
+  heading1XL: {
     fontFamily: 'SF-Pro-Text-Bold',
-    fontSize: 36,
-    lineHeight: 40,
-    color: "pink"
+    fontSize: 32,
+    lineHeight: 48,
   },
-  headingXLreg: {
-    fontFamily: 'SF-Pro-Text-Regular',
-    fontSize: 36,
-    lineHeight: 40,
-  },
-
-  // body text
-  bodyLbold: {
+  heading2L: {
     fontFamily: 'SF-Pro-Text-Bold',
     fontSize: 20,
     lineHeight: 32,
   },
-  bodyLreg: {
-    fontFamily: 'SF-Pro-Text-Regular',
-    fontSize: 20,
-    lineHeight: 32,
-  },
-  bodyMbold: {
+  heading3M: {
     fontFamily: 'SF-Pro-Text-Bold',
     fontSize: 16,
     lineHeight: 28,
   },
-  bodyMmed: {
+  heading4M: {
     fontFamily: 'SF-Pro-Text-Medium',
-    fontSize: 16,
-    lineHeight: 28,
+    fontSize: 14,
+    lineHeight: 24,
   },
-  bodyMreg: {
+  heading5M: {
+    fontFamily: 'SF-Pro-Text-Bold',
+    fontSize: 14,
+    lineHeight: 24,
+  },
+
+  // Body text (3 total)
+  body1M: {
     fontFamily: 'SF-Pro-Text-Regular',
     fontSize: 16,
     lineHeight: 28,
   },
-  bodySital: {
+  body2S: {
+    fontFamily: 'SF-Pro-Text-Regular',
+    fontSize: 14,
+    lineHeight: 24,
+  },
+  body3S: {
     fontFamily: 'SF-Pro-Text-LightItalic',
     fontSize: 14,
     lineHeight: 24,
   },
-  bodyXSmed: {
+
+  // Captions (3 total)
+  cap1XS: {
+    fontFamily: 'SF-Pro-Text-Bold',
+    fontSize: 12,
+    lineHeight: 22,
+  },
+  cap2XS: {
     fontFamily: 'SF-Pro-Text-Medium',
     fontSize: 12,
     lineHeight: 22,
   },
-  bodyXSital: {
+  cap3XS: {
     fontFamily: 'SF-Pro-Text-LightItalic',
-    fontSize: 12,
-    lineHeight: 22,
-  },
-
-  // CTAs
-  ctaSbold: {
-    fontFamily: 'SF-Pro-Text-Bold',
-    fontSize: 14,
-    lineHeight: 24,
-  },
-
-  ctaSreg: {
-    fontFamily: 'SF-Pro-Text-Regular',
-    fontSize: 14,
-    lineHeight: 24,
-  },
-
-  ctaXSbold: {
-    fontFamily: 'SF-Pro-Text-Bold',
-    fontSize: 12,
-    lineHeight: 22,
-  },
-
-  ctaXSreg: {
-    fontFamily: 'SF-Pro-Text-Regular',
     fontSize: 12,
     lineHeight: 22,
   },

@@ -8,19 +8,29 @@ export default function StyleTest() {
     <ScrollView>
       <SafeAreaView>
         <View style={[GlobalStyles.grid]}>
-          <Text style={[GlobalStyles.headingXLbold, GlobalStyles.spacing3x]}>This is an XL heading</Text>
-          <Text style={GlobalStyles.bodyLreg}>Hello world!</Text>
-          <Text style={GlobalStyles.bodyXSital}>I am styling things</Text>
+        <Text style={[GlobalStyles.heading1XL, GlobalStyles.spacing1x]}>32px Heading - Bold</Text>
+          <Text style={[GlobalStyles.heading2L, GlobalStyles.spacing1x]}>20px Heading - Bold</Text>
+          <Text style={[GlobalStyles.heading3M, GlobalStyles.spacing1x]}>16px Heading - Bold</Text>
+          <Text style={[GlobalStyles.heading4M, GlobalStyles.spacing1x]}>16px Heading - Medium</Text>
+          <Text style={[GlobalStyles.heading5M, GlobalStyles.spacing3x]}>14px Heading - Bold</Text>
+
+          <Text style={GlobalStyles.body1M}>16px Body - Regular</Text>
+          <Text style={GlobalStyles.body2S}>14px Body - Regular</Text>
+          <Text style={[GlobalStyles.body3S, GlobalStyles.spacing3x]}>14px Body - Light Italic</Text>
           
+          <Text style={GlobalStyles.cap1XS}>12px Body - Bold</Text>
+          <Text style={GlobalStyles.cap2XS}>12px Body - Medium</Text>
+          <Text style={[GlobalStyles.cap3XS, GlobalStyles.spacing3x]}>12px Body - Light Italic</Text>
+
         <View style={{ alignItems: 'left' }}>
           <Pressable style={GlobalStyles.btnLsecondary}>
-            <Text style={[GlobalStyles.ctaSreg, { color: '#39735D' }]}>Sample Btn</Text>
+            <Text style={[GlobalStyles.cap1XS, { color: '#39735D' }]}>Sample Btn</Text>
           </Pressable>
         </View>
 
         <View style={{ alignItems: 'left' }}>
           <Pressable style={GlobalStyles.pillXLsecondary}>
-            <Text style={[GlobalStyles.bodyLreg, { color: '#53A385' }]}>Secondary Pill</Text>
+            <Text style={[GlobalStyles.cap1XS, { color: '#53A385' }]}>Secondary Pill</Text>
           </Pressable>
         </View>
 
