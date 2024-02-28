@@ -1,37 +1,57 @@
-import { View, Text, SafeAreaView } from 'react-native'
+import { View, Text, SafeAreaView, ScrollView, Pressable } from 'react-native'
 import React from 'react'
 import GlobalStyles from '../components/settings/GlobalStyle'
-import { ScrollView, Pressable } from 'react-native'
+import { PrimaryColors, SecondaryColors, TintsColors } from '../components/settings/Colors'
+import { spacing } from '../components/settings/Spacing'
+import { type } from '../components/settings/Typography'
+import DietaryPill from '../components/Pill'
 
 export default function StyleTest() {
   return (
     <ScrollView>
       <SafeAreaView>
         <View style={[GlobalStyles.grid]}>
-        <Text style={[GlobalStyles.heading1XL, GlobalStyles.spacing1x]}>32px Heading - Bold</Text>
-          <Text style={[GlobalStyles.heading2L, GlobalStyles.spacing1x]}>20px Heading - Bold</Text>
-          <Text style={[GlobalStyles.heading3M, GlobalStyles.spacing1x]}>16px Heading - Bold</Text>
-          <Text style={[GlobalStyles.heading4M, GlobalStyles.spacing1x]}>16px Heading - Medium</Text>
-          <Text style={[GlobalStyles.heading5M, GlobalStyles.spacing3x]}>14px Heading - Bold</Text>
+        <Text style={[type.heading1XL, spacing.vert2x]}>32px Heading - Bold</Text>
+          <Text style={[type.heading2L, spacing.vert1x]}>20px Heading - Bold</Text>
+          <Text style={[type.heading3M, spacing.vert1x]}>16px Heading - Bold</Text>
+          <Text style={[type.heading4M, spacing.vert1x]}>16px Heading - Medium</Text>
+          <Text style={[type.heading5M, spacing.vert3x]}>14px Heading - Bold</Text>
 
-          <Text style={GlobalStyles.body1M}>16px Body - Regular</Text>
-          <Text style={GlobalStyles.body2S}>14px Body - Regular</Text>
-          <Text style={[GlobalStyles.body3S, GlobalStyles.spacing3x]}>14px Body - Light Italic</Text>
+          <Text style={type.body1M}>16px Body - Regular</Text>
+          <Text style={type.body2S}>14px Body - Regular</Text>
+          <Text style={[type.body3S, GlobalStyles.spacing3x]}>14px Body - Light Italic</Text>
           
-          <Text style={GlobalStyles.cap1XS}>12px Body - Bold</Text>
-          <Text style={GlobalStyles.cap2XS}>12px Body - Medium</Text>
-          <Text style={[GlobalStyles.cap3XS, GlobalStyles.spacing3x]}>12px Body - Light Italic</Text>
+          <Text style={type.cap1XS}>12px Body - Bold</Text>
+          <Text style={type.cap2XS}>12px Body - Medium</Text>
+          <Text style={[type.cap3XS, spacing.vert3x]}>12px Body - Light Italic</Text>
 
         <View style={{ alignItems: 'left' }}>
-          <Pressable style={GlobalStyles.btnLsecondary}>
-            <Text style={[GlobalStyles.cap1XS, { color: '#39735D' }]}>Sample Btn</Text>
-          </Pressable>
-        </View>
+          <DietaryPill
+            style={spacing.vert2x} // Apply vertical spacing
+            size="large" // Specify the size: 'small' or 'large'
+            type="active" // Specify the type: 'active' or 'inactive'
+            dietaryType="allergy" // Specify the dietary type: 'allergy' or 'diet'
+            text="Large primary" // Specify the text to display in the pill
+            // icon={/* your icon component or source */} // Pass the icon component or source if needed
+          />
 
-        <View style={{ alignItems: 'left' }}>
-          <Pressable style={GlobalStyles.pillXLsecondary}>
-            <Text style={[GlobalStyles.cap1XS, { color: '#53A385' }]}>Secondary Pill</Text>
-          </Pressable>
+          <DietaryPill
+          style={spacing.vert2x} // Apply vertical spacing
+          size="small" // Specify the size: 'small' or 'large'
+          type="active" // Specify the type: 'active' or 'inactive'
+          dietaryType="allergy" // Specify the dietary type: 'allergy' or 'diet'
+          text="Small primary" // Specify the text to display in the pill
+          // icon={/* your icon component or source */} // Pass the icon component or source if needed
+        />
+
+          <DietaryPill
+          style={spacing.vert2x} // Apply vertical spacing
+          size="large" // Specify the size: 'small' or 'large'
+          type="inactive" // Specify the type: 'active' or 'inactive'
+          dietaryType="diet" // Specify the dietary type: 'allergy' or 'diet'
+          text="Large secondary" // Specify the text to display in the pill
+          // icon={/* your icon component or source */} // Pass the icon component or source if needed
+        />
         </View>
 
       </View>
