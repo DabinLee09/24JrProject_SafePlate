@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { PrimaryColors, SecondaryColors, TintsColors } from './settings/Colors';
+import { PrimaryColors, TintsColors } from './settings/Colors';
 
-const DietaryPill = ({ size = 'small', type = 'active', dietaryType = 'allergy', text, icon, style }) => {
+const DietaryPill = ({ size = 'small', type = 'active', dietaryType = 'allergy', text, icon: IconComponent, style }) => {
     const primaryColor = dietaryType === 'allergy' ? PrimaryColors.Green : PrimaryColors.LightBlue;
     const textColor = type === 'active' ? TintsColors.White : primaryColor;
     const borderColor = type === 'inactive' ? primaryColor : 'transparent';
@@ -10,7 +10,7 @@ const DietaryPill = ({ size = 'small', type = 'active', dietaryType = 'allergy',
     const paddingVertical = size === 'large' ? 9 : 5;
     const paddingHorizontal = size === 'large' ? 16 : 8;
   
-    const styles = StyleSheet.create({
+    const pillStyles = StyleSheet.create({
       pill: {
         borderRadius: 100,
         paddingHorizontal: paddingHorizontal,
@@ -28,11 +28,15 @@ const DietaryPill = ({ size = 'small', type = 'active', dietaryType = 'allergy',
     });
   
     return (
-      <View style={[styles.pill, style]}>
-        {icon && <IconComponent icon={icon} />}
-        <Text style={styles.text}>{text}</Text>
+      <View style={[pillStyles.pill, style]}>
+        {IconComponent && (
+          <View>
+            <IconComponent width={20} height={20} />
+          </View>
+        )}
+        <Text style={pillStyles.text}>{text}</Text>
       </View>
     );
-};  
+};
 
 export default DietaryPill;
