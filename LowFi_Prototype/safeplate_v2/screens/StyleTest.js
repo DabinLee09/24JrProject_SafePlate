@@ -5,6 +5,7 @@ import { PrimaryColors, SecondaryColors, TintsColors } from '../components/setti
 import { spacing } from '../components/settings/Spacing'
 import { type } from '../components/settings/Typography'
 import DietaryPill from '../components/Pill'
+import DietaryIcons from '../assets/Icons'
 
 export default function StyleTest() {
   return (
@@ -29,29 +30,21 @@ export default function StyleTest() {
           <DietaryPill
             style={spacing.vert2x} // Apply vertical spacing
             size="large" // Specify the size: 'small' or 'large'
-            type="active" // Specify the type: 'active' or 'inactive'
+            type="inactive" // Specify the type: 'active' or 'inactive'
+            dietaryType="diet" // Specify the dietary type: 'allergy' or 'diet'
+            text="Diet" // Specify the text to display in the pill
+            icon={DietaryIcons.VegetarianSolid} // Pass the icon component or source if needed
+          />
+        <DietaryPill
+            style={spacing.vert2x} // Apply vertical spacing
+            size="large" // Specify the size: 'small' or 'large'
+            type="inactive" // Specify the type: 'active' or 'inactive'
             dietaryType="allergy" // Specify the dietary type: 'allergy' or 'diet'
-            text="Large primary" // Specify the text to display in the pill
-            // icon={/* your icon component or source */} // Pass the icon component or source if needed
+            text="Allergy" // Specify the text to display in the pill
+            icon={DietaryIcons.WheatSolid} // Pass the icon component or source if needed
           />
 
-          <DietaryPill
-          style={spacing.vert2x} // Apply vertical spacing
-          size="small" // Specify the size: 'small' or 'large'
-          type="active" // Specify the type: 'active' or 'inactive'
-          dietaryType="allergy" // Specify the dietary type: 'allergy' or 'diet'
-          text="Small primary" // Specify the text to display in the pill
-          // icon={/* your icon component or source */} // Pass the icon component or source if needed
-        />
 
-          <DietaryPill
-          style={spacing.vert2x} // Apply vertical spacing
-          size="large" // Specify the size: 'small' or 'large'
-          type="inactive" // Specify the type: 'active' or 'inactive'
-          dietaryType="diet" // Specify the dietary type: 'allergy' or 'diet'
-          text="Large secondary" // Specify the text to display in the pill
-          // icon={/* your icon component or source */} // Pass the icon component or source if needed
-        />
         </View>
 
       </View>
