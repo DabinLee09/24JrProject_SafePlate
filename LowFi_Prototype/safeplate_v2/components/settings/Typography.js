@@ -18,16 +18,16 @@
   },
   heading4M: {
     fontFamily: 'SF-Pro-Text-Medium',
-    fontSize: 14,
-    lineHeight: 24,
+    fontSize: 16,
+    lineHeight: 28,
   },
-  heading5M: {
+  heading5S: {
     fontFamily: 'SF-Pro-Text-Bold',
     fontSize: 14,
     lineHeight: 24,
   },
 
-  // Body text (3 total)
+  // Body text
   body1M: {
     fontFamily: 'SF-Pro-Text-Regular',
     fontSize: 16,
@@ -43,8 +43,13 @@
     fontSize: 14,
     lineHeight: 24,
   },
+  body4L: {
+    fontFamily: 'SF-Pro-Text-Regular',
+    fontSize: 20,
+    lineHeight: 32,
+  },
 
-  // Captions (3 total)
+  // Captions
   cap1XS: {
     fontFamily: 'SF-Pro-Text-Bold',
     fontSize: 12,
@@ -60,4 +65,9 @@
     fontSize: 12,
     lineHeight: 22,
   },
+  cap4xs: {
+    fontFamily: 'SF-Pro-Text-Regular',
+    fontSize: 12,
+    lineHeight: 22,
+  }
 }
