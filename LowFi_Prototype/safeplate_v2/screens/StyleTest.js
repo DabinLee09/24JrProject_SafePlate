@@ -6,33 +6,36 @@ import { spacing } from '../components/settings/Spacing'
 import { type } from '../components/settings/Typography'
 import DietaryPill from '../components/Pill'
 import DietaryIcons from '../assets/Icons'
+import Button from '../components/Button'
 
 export default function StyleTest() {
   return (
     <ScrollView>
-      <SafeAreaView>
+      <SafeAreaView></SafeAreaView>
         <View style={[GlobalStyles.grid]}>
         <Text style={[type.heading1XL, spacing.vert2x]}>32px Heading - Bold</Text>
           <Text style={[type.heading2L, spacing.vert1x]}>20px Heading - Bold</Text>
           <Text style={[type.heading3M, spacing.vert1x]}>16px Heading - Bold</Text>
           <Text style={[type.heading4M, spacing.vert1x]}>16px Heading - Medium</Text>
-          <Text style={[type.heading5M, spacing.vert3x]}>14px Heading - Bold</Text>
+          <Text style={[type.heading5S, spacing.vert3x]}>14px Heading - Bold</Text>
 
+          <Text style={type.body4L}>20px Body - Regular</Text>
           <Text style={type.body1M}>16px Body - Regular</Text>
           <Text style={type.body2S}>14px Body - Regular</Text>
-          <Text style={[type.body3S, GlobalStyles.spacing3x]}>14px Body - Light Italic</Text>
+          <Text style={[type.body3S, spacing.vert3x]}>14px Body - Light Italic</Text>
           
-          <Text style={type.cap1XS}>12px Body - Bold</Text>
-          <Text style={type.cap2XS}>12px Body - Medium</Text>
-          <Text style={[type.cap3XS, spacing.vert3x]}>12px Body - Light Italic</Text>
+          <Text style={type.cap1XS}>12px Cap - Bold</Text>
+          <Text style={type.cap2XS}>12px Cap - Medium</Text>
+          <Text style={type.cap3XS}>12px Cap - Light Italic</Text>
+          <Text style={[type.cap4XS, spacing.vert3x]}>12px Cap - Regular</Text>
 
         <View style={{ alignItems: 'left' }}>
           <DietaryPill
             style={spacing.vert2x} // Apply vertical spacing
-            size="large" // Specify the size: 'small' or 'large'
+            size="small" // Specify the size: 'small' or 'large'
             type="inactive" // Specify the type: 'active' or 'inactive'
             dietaryType="diet" // Specify the dietary type: 'allergy' or 'diet'
-            text="Diet" // Specify the text to display in the pill
+            text="Diet S" // Specify the text to display in the pill
             icon={DietaryIcons.VegetarianSolid} // Pass the icon component or source if needed
           />
         <DietaryPill
@@ -40,15 +43,25 @@ export default function StyleTest() {
             size="large" // Specify the size: 'small' or 'large'
             type="inactive" // Specify the type: 'active' or 'inactive'
             dietaryType="allergy" // Specify the dietary type: 'allergy' or 'diet'
-            text="Allergy" // Specify the text to display in the pill
+            text="Allergy L" // Specify the text to display in the pill
             icon={DietaryIcons.WheatSolid} // Pass the icon component or source if needed
           />
-
-
         </View>
 
+          <View style={{alignItems: 'left', marginBottom: 20}} >
+            <Button active={true} text="Active S" size="small"/>
+          </View>
+
+          <View style={{alignItems: 'left', marginBottom: 20}} >
+            <Button active={false} text="Inactive M" size="medium"/>
+          </View>
+
+          <View style={{marginBottom: 20}} >
+            <Button text="Active L" size="large"/>
+          </View>
+        
       </View>
-      </SafeAreaView>
+      
     </ScrollView>
   );
 }
