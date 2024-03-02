@@ -9,8 +9,16 @@ const GlobalStyles = StyleSheet.create({
     paddingVertical: 24,
   },
 
-  rounded: {
+  radius1x: {
     borderRadius: 4,
+  },
+
+  radius3x: {
+    borderRadius: 12,
+  },
+
+  radius25x: {
+    borderRadius: 100
   },
 
   // button styles
