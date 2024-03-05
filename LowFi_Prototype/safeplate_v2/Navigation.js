@@ -10,6 +10,8 @@ import Home from './screens/Home';
 import  Buddies from './screens/Buddies';
 import  Account  from './screens/Account';
 import RestaurantDetail from './screens/RestaurantDetail';
+import SearchTabDefault from './components/search/SearchTabDefault';
+import SearchTabType from './components/search/SearchTabType';
 
 
 

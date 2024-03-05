@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { BlurView } from 'expo-blur';
 import { FadeIn, FadeOut, SlideInDown } from 'react-native-reanimated';
 import { useRoute } from '@react-navigation/native';
-import PopularInPlace from '../home/PopularInPlace';
+// import PopularInPlace from '../home/PopularInPlace';
 import WhoCheckBox from './WhoCheckBox';
 import RestrictionCheckBox from './RestrictionCheckBox';
 import { ScrollView } from 'react-native';
