@@ -3,11 +3,39 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack'
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import Home from './screens/Home';
 import  Buddies from './screens/Buddies';
 import  Account  from './screens/Account';
 import RestaurantDetail from './screens/RestaurantDetail';
+
+
+
+
+//SearchTab
+const SearchTab = createMaterialTopTabNavigator();
+
+function SearchTabGroup(){
+  return(
+    <SearchTab.Navigator screenOptions={{
+      tabBarLabelStyle: {fontSize: 16, textTransform: "none"},
+      tabBarActiveTintColor: "#53A385",
+      tabBarInactiveTintColor: "#7E7E7E",
+      tabBarIndicatorStyle: { 
+        height: 3, 
+        borderRadius: 4, 
+        marginHorizontal: 60,
+        width: 80, 
+        backgroundColor: "#53A385",
+      } ,
+    }}>
+      <SearchTab.Screen name="Default Search" component={SearchTabDefault} />
+      <SearchTab.Screen name="Type Search" component={SearchTabType} />
+    </SearchTab.Navigator>
+  )
+}
 
 
 
@@ -19,6 +47,7 @@ function HomeStackGroup({ navigation }) {
     // <HomeStack.Navigator initialRouteName='Home' screenOptions={{ headerShown: false}}>
     <HomeStack.Navigator>
       <HomeStack.Screen name='Home' component={Home} />
+      <HomeStack.Screen name='SearchTabGroup' component={SearchTabGroup} options={{presentation: 'Modal'}}/>
       <HomeStack.Screen name='RestaurantDetail' component={RestaurantDetail} />
     </HomeStack.Navigator>
 

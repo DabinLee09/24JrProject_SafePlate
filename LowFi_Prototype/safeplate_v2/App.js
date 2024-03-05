@@ -17,9 +17,9 @@ export default function App() {
   }
 
   return (
-    // <Navigation />
+    <Navigation />
 
     //Gianna's WorkSpace
-    <StyleTest />
+    // <StyleTest />
   );
 }
