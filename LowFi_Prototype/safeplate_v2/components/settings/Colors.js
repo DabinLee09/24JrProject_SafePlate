@@ -1,6 +1,8 @@
 export const PrimaryColors = {
-    Green: '#39735D',
-    LightBlue: '#479BEC',
+    // Green: '#39735D',
+    // LightBlue: '#479BEC',
+    Green: '#0D7D70',
+    Blue: '#3275C8'
 }
   
 export const SecondaryColors = {
@@ -17,4 +19,6 @@ export const TintsColors = {
     CoolGray: '#F3F3F8',
     WarmGray: '#FAF6F3',
     Platinum: '#E3E3E3',
+    MediumGray: '#737373',
+    DarkGray: '#343434',
 }
