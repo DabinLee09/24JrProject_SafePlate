@@ -13,6 +13,12 @@ const GlobalStyles = StyleSheet.create({
     paddingVertical: 24,
   },
 
+  mainView: {
+    flex: 1,
+    paddingHorizontal: 16,
+    paddingBottom: 24
+  },
+
   radius1x: {
     borderRadius: 4,
   },
