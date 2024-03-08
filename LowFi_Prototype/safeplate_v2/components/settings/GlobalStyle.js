@@ -1,5 +1,9 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
+import { type } from './Typography'
+import { TintsColors } from './Colors';
+import { spacing } from './Spacing';
+
 
 const GlobalStyles = StyleSheet.create({
   // grid defining left/right and top/bottom margins
@@ -20,6 +24,13 @@ const GlobalStyles = StyleSheet.create({
   radius25x: {
     borderRadius: 100
   },
+
+  pageHeader: {
+    ...type.heading2L,
+    textAlign: 'center',
+    color: TintsColors.DarkGray,
+    ...spacing.vert4x,
+  }
 
   // button styles
   // apply ctaSbold for S, M, L btns
