@@ -21,4 +21,6 @@ export const TintsColors = {
     Platinum: '#E3E3E3',
     MediumGray: '#737373',
     DarkGray: '#343434',
+    SearchGray: '#F6F6F6',
+    MidGray: '#4A4A4A'
 }
