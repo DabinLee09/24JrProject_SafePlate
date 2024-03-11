@@ -13,7 +13,8 @@ import RestaurantDetail from './screens/RestaurantDetail';
 import SearchTabDefault from './components/search/SearchTabDefault';
 import SearchTabType from './components/search/SearchTabType';
 
-
+// Gianna added
+import CuratedGuide from './screens/CuratedGuide';
 
 
 //SearchTab
@@ -49,6 +50,7 @@ function HomeStackGroup({ navigation }) {
     // <HomeStack.Navigator initialRouteName='Home' screenOptions={{ headerShown: false}}>
     <HomeStack.Navigator>
       <HomeStack.Screen name='Home' component={Home} />
+      <HomeStack.Screen name="CuratedGuide" component={CuratedGuide} />
       <HomeStack.Screen name='SearchTabGroup' component={SearchTabGroup} options={{presentation: 'Modal'}}/>
       <HomeStack.Screen name='RestaurantDetail' component={RestaurantDetail} />
     </HomeStack.Navigator>
